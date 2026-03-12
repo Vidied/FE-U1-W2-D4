@@ -141,12 +141,31 @@ f("21 = " + multiplo);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const reverseString = function (s) {
+  let string = s;
+  let reverse = string.split("").reverse().join("");
+  return reverse;
+};
+
+let reverse = reverseString("EPICODE");
+f(reverse);
+
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let prova = "stringadiprova";
+prova.split("");
+f(prova);
+
+//const upperFirst = function(s){
+//    let s = s.split("")
+//    let maiusc = []
+//    let maiuscolo =
+//}
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -155,8 +174,31 @@ f("21 = " + multiplo);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const cutString = function (s) {
+  let string = s;
+  let cut = string.split("").slice(1, -1).join("");
+  return cut;
+};
+
+let cut = cutString("EPICODE");
+f(cut);
+cut = cutString("prova");
+f(cut);
+
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const giveMeRandom = function (n) {
+  let numero = [];
+  for (let i = 0; i < n; i++) {
+    random = Math.floor(Math.random() * 11);
+    numero.push(random);
+  }
+  return numero;
+};
+
+let numero = giveMeRandom(10);
+f(numero);
