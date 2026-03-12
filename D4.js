@@ -202,3 +202,7 @@ const giveMeRandom = function (n) {
 
 let numero = giveMeRandom(10);
 f(numero);
+numero = giveMeRandom(5);
+f(numero);
+numero = giveMeRandom(6);
+f(numero);
